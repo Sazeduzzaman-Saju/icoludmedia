@@ -3,6 +3,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none !important;
+}
 /* Base CSS */
 .alignleft {
   float: left;
@@ -237,7 +240,7 @@ a:hover {
 
 button:focus {
   outline: 0;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 /* header-area-start */
@@ -410,7 +413,7 @@ a {
   color: #197bff;
 }
 .hero-slider-area {
-  width: 86.5%;
+  /* width: 86.5%; */
   margin-left: auto;
   padding-bottom: 112px;
 }
@@ -420,12 +423,17 @@ a {
 
 .hero-single-slider {
   position: relative;
-  height: 415px;
-  width: 415px;
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
   transition: 0.3s;
+  width: 392px !important;
+  height: 392px !important;
+}
+.owl-item.active.firstactiveitem .hero-single-slider {
+  width: 392px !important;
+  height: 471px !important;
+  border-radius: 45%;
 }
 .white .hero-area {
   margin-top: 70px;
@@ -527,9 +535,6 @@ a {
   font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.2px;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 0;
 }
 .single-searvice:after {
   border-radius: 10px;
@@ -676,8 +681,6 @@ a {
   position: relative;
   overflow: hidden;
   border-radius: 45%;
-  display: flex;
-  align-items: center;
 }
 .project-img {
   height: 100%;
@@ -893,7 +896,6 @@ a {
 }
 .footer-box {
   background: linear-gradient(180deg, #252a37 0%, rgba(37, 42, 55, 0) 100%);
-  border-radius: 20px;
   padding-top: 36px;
   padding-left: 60px;
   padding-right: 60px;
@@ -1323,6 +1325,7 @@ testi-user-img .gallery-thumbs .swiper-slide {
   background: #061237;
   padding-top: 200px;
   position: relative;
+  padding-bottom: 10px;
 }
 .white .footer-box {
   border: 0;

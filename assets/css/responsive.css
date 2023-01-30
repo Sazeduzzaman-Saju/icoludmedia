@@ -14,6 +14,23 @@ body {
 
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1449px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 115px !important; /* Height of navbar */
+    bottom: 0;
+    z-index: 999;
+    right: 100%;
+    left: -300px;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #1c212d;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: left, visibility;
+  }
   .hero-slider-area {
     width: 100%;
   }
@@ -32,7 +49,7 @@ body {
   .owl-item.active.firstactiveitem .hero-single-slider {
     height: 307px;
     width: 307px;
-    border-radius: 50%;
+    border-radius: 45%;
   }
 
   .claint-area {
@@ -295,7 +312,7 @@ body {
     padding-bottom: 70px;
   }
   .project-box .owl-item:nth-child(2n + 1) {
-    margin: 0;
+    margin-top: 44px !important;
   }
   .project-box .owl-carousel .owl-stage {
     padding-left: 0 !important;
