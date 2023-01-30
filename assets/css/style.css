@@ -325,6 +325,7 @@ button:focus {
 .header-bar a {
   /* background: #197bff; */
   border-radius: 26px;
+  font-weight: bold;
 }
 .navbar-nav {
   /* background: #197bff; */
@@ -413,9 +414,10 @@ a {
   color: #197bff;
 }
 .hero-slider-area {
-  /* width: 86.5%; */
+  width: 100%;
   margin-left: auto;
   padding-bottom: 112px;
+  margin-left: 19rem !important;
 }
 .hero-slider-area .owl-stage {
   padding-left: 0 !important;
@@ -427,13 +429,25 @@ a {
   border-radius: 50%;
   overflow: hidden;
   transition: 0.3s;
-  width: 392px !important;
-  height: 392px !important;
+  width: 396px !important;
+  height: 396px !important;
+}
+.owl-item.active {
+  margin-left: -10px !important;
 }
 .owl-item.active.firstactiveitem .hero-single-slider {
-  width: 392px !important;
-  height: 471px !important;
-  border-radius: 45%;
+  width: 420px !important;
+  height: 505px !important;
+  border-radius: 45% !important;
+  margin-right: -70px !important;
+  margin-left: 25px !important;
+}
+.owl-carousel .owl-stage-outer {
+  width: 100%;
+  height: 610px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 .white .hero-area {
   margin-top: 70px;
@@ -682,10 +696,10 @@ a {
   overflow: hidden;
   border-radius: 45%;
 }
-.project-img {
+/* .project-img {
   height: 100%;
   width: 100%;
-}
+} */
 .project-text {
   position: absolute;
   left: 0;

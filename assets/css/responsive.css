@@ -13,6 +13,12 @@ body {
 }
 
 /* XL Device :1200px. */
+@media (min-width: 1449px) and (max-width: 1900px) {
+  .hero-slider-area {
+    width: 100%;
+    margin-left: 10rem !important;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1449px) {
   .offcanvas-collapse {
     position: fixed;
@@ -33,6 +39,7 @@ body {
   }
   .hero-slider-area {
     width: 100%;
+    margin-left: 1rem !important;
   }
 
   .header-area {
@@ -46,6 +53,9 @@ body {
     height: 307px;
     width: 307px;
   }
+  /* .hero-single-slider {
+    width: 450px !important;
+  } */
   .owl-item.active.firstactiveitem .hero-single-slider {
     height: 307px;
     width: 307px;
@@ -68,6 +78,9 @@ body {
 @media (min-width: 992px) and (max-width: 1200px) {
   .hero-slider-area {
     width: 100%;
+    margin-left: auto;
+    padding-bottom: 112px;
+    margin-left: 12rem !important;
   }
 
   .header-area {
@@ -199,10 +212,23 @@ body {
 }
 
 /* SM Small Device :320px. */
+@media only screen and (min-width: 991px) and (max-width: 1300px) {
+  .hero-slider-area {
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 112px;
+    margin-left: 10rem !important;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .owl-carousel .owl-stage-outer {
+    width: 100%;
+    height: 330px;
+  }
   .hero-slider-area {
     width: 100%;
     padding-bottom: 90px;
+    margin-left: 0rem !important;
   }
   .centers {
     text-align: center !important;
@@ -216,12 +242,12 @@ body {
     margin-bottom: 10px;
   }
   .hero-single-slider {
-    height: 264px;
-    width: 264px;
+    height: 264px !important;
+    width: 264px !important;
   }
   .owl-item.active.firstactiveitem .hero-single-slider {
-    height: 308px;
-    width: 287px;
+    height: 308px !important;
+    width: 287px !important;
   }
   .section-title span {
     margin-bottom: 16px;
